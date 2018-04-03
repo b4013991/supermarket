@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Welcome to Grails</title>
+    <title>System Architectures Assignment 2 | Developing a Grails Application using MVC</title>
 </head>
 <body>
     <content tag="nav">
