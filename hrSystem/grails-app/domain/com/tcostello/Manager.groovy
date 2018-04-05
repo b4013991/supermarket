@@ -8,6 +8,7 @@ String password
 String managerEmail
 String office
 String department
+Team team
 
     static constraints = {
 fullName nullable:false, blank:false

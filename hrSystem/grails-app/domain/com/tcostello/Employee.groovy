@@ -15,6 +15,7 @@ Teamleader teamleader
 Manager manager
 
 
+
     static constraints = {
 fullName nullable:false, blank:false
 dateOfBirth nullable:false, blank:false

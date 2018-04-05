@@ -32,7 +32,8 @@ def man1 = new com.tcostello.Manager(
 	password: 'scross98',
 	managerEmail: 'scross@gmail.com',
 	office: 'B1-900',
-	department: 'Grocery').save(failOnError:true)
+	department: 'Grocery',
+	team: team2).save(failOnError:true)
 
 def man2 = new com.tcostello.Manager(
 	fullName: 'Chad Daboss',
@@ -40,7 +41,8 @@ def man2 = new com.tcostello.Manager(
 	password: 'cboss97',
 	managerEmail: 'cboss@gmail.com',
 	office: 'B2-500',
-	department: 'Electronics').save(failOnError:true)
+	department: 'Electronics',
+	team: team1).save(failOnError:true)
 
 def man3 = new com.tcostello.Manager(
 	fullName: 'Chris Pierre',
@@ -48,7 +50,8 @@ def man3 = new com.tcostello.Manager(
 	password: 'password1',
 	managerEmail: 'cpierre@gmail.com',
 	office: 'B4-900',
-	department: 'Clothing').save(failOnError:true)
+	department: 'Clothing',
+	team: team3).save(failOnError:true)
 
 //Team Leader
 
@@ -59,7 +62,9 @@ def lead1 = new com.tcostello.Teamleader(
 	sectionName: 'Checkout',
 	officePhone: '0192347857',
 	leaderEmail: 'smac@gmail.com',
-	password: 'dff4h').save(failOnError:true)
+	password: 'dff4h',
+	manager: man1,
+	team: team2).save(failOnError:true)
 
 def lead2 = new com.tcostello.Teamleader(
 	fullName: 'Frank Ocean',
@@ -68,7 +73,9 @@ def lead2 = new com.tcostello.Teamleader(
 	sectionName: 'Fishery',
 	officePhone: '019347632',
 	leaderEmail: 'focean@gmail.com',
-	password: 'nikes').save(failOnError:true)
+	password: 'nikes',
+	manager: man2,
+	team: team1).save(failOnError:true)
 
 def lead3 = new com.tcostello.Teamleader(
 	fullName: 'Tom Costello',
@@ -77,7 +84,9 @@ def lead3 = new com.tcostello.Teamleader(
 	sectionName: 'Alcohol',
 	officePhone: '018475940',
 	leaderEmail: 'worktomcostello@gmail.com',
-	password: 'pass123').save(failOnError:true)
+	password: 'pass123',
+	manager: man3,
+	team: team3).save(failOnError:true)
 
 
 //Task
