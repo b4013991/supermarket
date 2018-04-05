@@ -29,6 +29,9 @@ hourlyRate nullable:false, blank:false
 employeeID nullable:false, blank:false, unique:true
 dateEmployed nullable:false, blank:false
 taxCode nullable:false, blank:false
-contract nullable:false, blank:false
+contract nullable:false, blank:false, inList:["Full-time", "Part-time"]
+shift nullable:false, blank:true
+teamleader nullable:false, blank:true
+manager nullable:true, blank:true 
     }
 }

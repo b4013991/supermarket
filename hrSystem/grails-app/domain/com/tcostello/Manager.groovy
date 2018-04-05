@@ -26,5 +26,6 @@ password nullable:false, blank:false
 managerEmail nullable:false, blank:false
 office nullable:false, blank:false
 department nullable:false, blank:false
+team nullable:true, blank:true
     }
 }

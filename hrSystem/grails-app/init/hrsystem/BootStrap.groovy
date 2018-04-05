@@ -3,7 +3,7 @@ package hrsystem
 class BootStrap {
 
     def init = { servletContext ->
-
+/*
 //Team
 
 def team1 = new com.tcostello.Team(
@@ -181,7 +181,7 @@ def emp3 = new com.tcostello.Employee(
 	manager:man3).save(failOnError:true)
 	
 
-
+*/
 
     }
     def destroy = {

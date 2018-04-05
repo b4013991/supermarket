@@ -28,5 +28,7 @@ sectionName nullable:false, blank:false
 officePhone nullable:false, blank:false
 leaderEmail nullable:false, blank:false
 password nullable:false, blank:false
+manager nullable:true, blank:true
+team nullable:true, blank:true
     }
 }

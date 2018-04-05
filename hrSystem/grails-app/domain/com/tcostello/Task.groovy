@@ -9,6 +9,7 @@ String department
 String timeRequired
 String description
 boolean taskCompleted
+Shift shift
 
 
 String toString()
@@ -25,5 +26,6 @@ department nullable:false, blank:false
 timeRequired nullable:false, blank:false
 description nullable:false, blank:false
 taskCompleted nullable:false, blank:false
+shift nullable:true, blank:true
     }
 }
