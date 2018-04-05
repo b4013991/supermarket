@@ -8,7 +8,7 @@ String sectionName
 String department
 String timeRequired
 String description
-Boolean taskCompleted
+boolean taskCompleted
 
     static constraints = {
 taskName nullable:false, blank:false
