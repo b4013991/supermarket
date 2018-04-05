@@ -10,6 +10,9 @@ String employeeID
 Date dateEmployed
 String taxCode
 String contract
+Shift shift
+Teamleader teamleader
+Manager manager
 
 
     static constraints = {

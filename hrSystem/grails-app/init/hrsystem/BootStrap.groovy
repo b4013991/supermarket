@@ -79,37 +79,6 @@ def lead3 = new com.tcostello.Teamleader(
 	leaderEmail: 'worktomcostello@gmail.com',
 	password: 'pass123').save(failOnError:true)
 
-//Employee
-
-def emp1 = new com.tcostello.Employee(
-	fullName: 'Tom Rivers',
-	dateOfBirth: new Date('05/05/1999'),
-	residence: 'Sheffield',
-	hourlyRate: '7.50',
-	employeeID: 'E2555',
-	dateEmployed: new Date('26/02/2018'),
-	taxCode: 'TX345',
-	contract: 'Part-time').save(failOnError:true)
-
-def emp2 = new com.tcostello.Employee(
-	fullName: 'Chloe Bold',
-	dateOfBirth: new Date('06/02/1997'),
-	residence: 'Chesterfield',
-	hourlyRate: '8',
-	employeeID: 'E2675',
-	dateEmployed: new Date('20/07/2017'),
-	taxCode: 'TX234',
-	contract: 'Full-time').save(failOnError:true)
-
-def emp3 = new com.tcostello.Employee(
-	fullName: 'Harry Oldfield',
-	dateOfBirth: new Date('05/05/1977'),
-	residence: 'Rotherham',
-	hourlyRate: '9',
-	employeeID: 'E5678',
-	dateEmployed: new Date('01/02/2014'),
-	taxCode: 'TX667',
-	contract: 'Full-time').save(failOnError:true)
 
 //Task
 
@@ -159,6 +128,48 @@ def shift3 = new com.tcostello.Shift(
 	dayOfWeek: 'Wednesday',
 	numberOfHours: '8',
 	startingTime: '6:00am').save(failOnError:true)
+
+//Employee
+
+def emp1 = new com.tcostello.Employee(
+	fullName: 'Tom Rivers',
+	dateOfBirth: new Date('05/05/1999'),
+	residence: 'Sheffield',
+	hourlyRate: '7.50',
+	employeeID: 'E2555',
+	dateEmployed: new Date('26/02/2018'),
+	taxCode: 'TX345',
+	contract: 'Part-time',
+	shift: shift1,
+	teamleader: lead1,
+	manager:man1).save(failOnError:true)
+	
+
+def emp2 = new com.tcostello.Employee(
+	fullName: 'Chloe Bold',
+	dateOfBirth: new Date('06/02/1997'),
+	residence: 'Chesterfield',
+	hourlyRate: '8',
+	employeeID: 'E2675',
+	dateEmployed: new Date('20/07/2017'),
+	taxCode: 'TX234',
+	contract: 'Full-time',
+	shift: shift2,
+	teamleader: lead2,
+	manager:man2).save(failOnError:true)
+
+def emp3 = new com.tcostello.Employee(
+	fullName: 'Harry Oldfield',
+	dateOfBirth: new Date('05/05/1977'),
+	residence: 'Rotherham',
+	hourlyRate: '9',
+	employeeID: 'E5678',
+	dateEmployed: new Date('01/02/2014'),
+	taxCode: 'TX667',
+	contract: 'Full-time',
+	shift: shift3,
+	teamleader: lead3,
+	manager:man3).save(failOnError:true)
 	
 
 
