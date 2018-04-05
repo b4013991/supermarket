@@ -10,6 +10,15 @@ String office
 String department
 Team team
 
+
+String toString()
+{
+return "$fullName"
+}
+
+
+
+
     static constraints = {
 fullName nullable:false, blank:false
 userName nullable:false, blank:false

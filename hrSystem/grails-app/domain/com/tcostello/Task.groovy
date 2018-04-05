@@ -10,6 +10,13 @@ String timeRequired
 String description
 boolean taskCompleted
 
+
+String toString()
+{
+return "$taskName"
+}
+
+
     static constraints = {
 taskName nullable:false, blank:false
 numberOfPeople nullable:false, blank:false

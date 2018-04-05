@@ -14,6 +14,11 @@ Shift shift
 Teamleader teamleader
 Manager manager
 
+String toString()
+{
+return "$fullName"
+}
+
 
 
     static constraints = {

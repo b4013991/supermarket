@@ -7,6 +7,13 @@ String dayOfWeek
 Float numberOfHours
 String startingTime
 
+
+String toString()
+{
+return "$dayOfWeek"
+}
+
+
     static constraints = {
 timeOfDay nullable:false, blank:false
 dayOfWeek nullable:false, blank:false

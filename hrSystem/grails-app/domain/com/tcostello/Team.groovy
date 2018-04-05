@@ -7,6 +7,13 @@ int numberOfEmployees
 String sectionName
 String description
 
+
+String toString()
+{
+return "$teamName"
+}
+
+
     static constraints = {
 teamName nullable:false, blank:false
 numberOfEmployees nullable:false, blank:false
